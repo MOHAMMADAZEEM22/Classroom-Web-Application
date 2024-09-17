@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Teacher Login</h2>
+            <form action="loginurl" method="post">
+                <label for="teacher-id">Teacher Id:</label>
+                <input type="text" id="teacher-id" name="teacher-id"  maxlength="4"  placeholder="Enter 4 Digit Numeric ID" required
+                 name="quantity" onkeypress="return (event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode == 46)">
+                <label for="teacher-password">Password:</label>
+                <input type="password" id="teacher-password" name="teacher-password"  maxlength="8" placeholder="Enter 8 Digit Alphanumeric Password" required>
+                <button type="submit">Login</button>
+                <p class='login-toggle'>Create an account <span><a href="teacher_register.jsp">click here</a></span></p>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Student Login</h2>
+            <form action="loginurl1" method="post">
+                <label for="student-id">Student Id:</label>
+                <input type="text" id="student-id" name="student-id"  maxlength="4"  placeholder="Enter 4 Digit Numeric ID" required
+                 name="quantity" onkeypress="return (event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode == 46)">
+                <label for="student-password">Password:</label>
+                <input type="password" id="student-password"  maxlength="8" name="student-password"  placeholder="Enter 8 Digit Alphanumeric Password"required>
+                <button type="submit">Login</button>
+                <p class='login-toggle'>Create an account <span><a href="student_register.jsp">click here</a></span></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
